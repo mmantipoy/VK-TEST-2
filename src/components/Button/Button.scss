@@ -1,0 +1,27 @@
+
+@import '../../styles/mixins.scss';
+
+.button{
+
+    &__body{
+
+        @include flex-display(row, center, center, 0px, nowrap);
+        width: 200px;
+        height: 40px;
+
+        background-color: lightblue;
+        color: black;
+        border-radius: 12px;
+
+        transition: transform 0.3s ease;
+
+        text-transform: capitalize;
+
+        &:hover{
+
+            cursor: pointer;
+            border: 1px solid lightseagreen;
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../styles/mixins.scss';
+
+.age{
+
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        @include flex-display(column, center, center, 26px, wrap);
+    }
+
+    &__form{
+
+        @include flex-display(column, center, center, 16px, wrap);
+    }
+
+    &__input-wrapper{
+
+        @include flex-display(column, center, center, 6px, wrap);
+        
+        // простите за стили по элементам)
+        p{ 
+            margin: 0; 
+            padding: 0;
+        }
+
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+            width: 300px
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export const getAge = (name: string) => fetch(`https://api.agify.io/?name=${name}`).then((res) => res.json());

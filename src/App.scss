@@ -1,0 +1,19 @@
+@import './styles/mixins.scss';
+
+.app{
+  &__wrapper{
+    width: 100%;
+    height: 100%;
+    @include flex-display(column, center, center, 32px, nowrap);
+  }
+}
+
+.cell{
+  
+  &__wrapper{
+
+    width: 100%;
+    height: 400px;
+    @include flex-display(column, center, center, 32px, nowrap);
+  }
+}
